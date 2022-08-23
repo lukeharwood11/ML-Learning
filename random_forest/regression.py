@@ -12,16 +12,16 @@ def main():
     """
     # Read in data and display the first 5 rows
     path = 'res/temps.csv'
-    features = pd.read_csv(path)
-    print(features.head())
+    df = pd.read_csv(path)
+    print(df.head())
 
-    print('The shape of our features is:', features.shape)
+    print('The shape of our features is:', df.shape)
 
     # To identify anomalies, we can quickly compute summary statistics.
-    print(features.describe())
+    print(df.describe())
 
     # One-Hot encode the data
-    features = pd.get_dummies(features)
+    features = pd.get_dummies(df)
 
     # Display the first 5 rows of the last 12 columns
     print(features.iloc[:, 5:].head(5))
@@ -101,6 +101,17 @@ def main():
     # Write graph to a png file
     graph.write_png('res/tree.png')
 
+    # Get numerical feature importances
+    importances = list(rf.feature_importances_)
+    # List of tuples with variable and importance
+    feature_importances = [(feature, round(importance, 2)) for feature, importance in zip(feature_list, importances)]
+    # Sort the feature importances by most important first
+    feature_importances = sorted(feature_importances, key=lambda x: x[1], reverse=True)
+    # Print out the feature and importances
+    [print('Variable: {:20} Importance: {}'.format(*pair)) for pair in feature_importances]
+
+    # Look at the correlation between different data points
+    print(df.corr()['actual'])
 
 
 if __name__ == "__main__":
