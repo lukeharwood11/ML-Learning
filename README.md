@@ -4,11 +4,14 @@ Playground to implement and annotate different Machine Learning algorithms, tech
 
 ## Algorithms implemented:
 - K-Means
+- K-Nearest-Neighbor (KNN)
 - Random Forest Classification
 
 ## Algorithms in queue:
+- [x] K-Means
+- [x] Random Forest Classification
 - [ ] Random Forest Regression
-- [ ] K-Nearest-Neighbor (KNN)
+- [x] K-Nearest-Neighbor (KNN)
 - [ ] Linear regression
 - [ ] Logistic regression
 - [ ] Decision tree
