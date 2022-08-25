@@ -1,5 +1,7 @@
 # KNN (K-Nearest-Neighbor)
 
+**Type**: Supervised Learning
+
 Explanation: https://www.pinecone.io/learn/k-nearest-neighbor/
 
 ### Working Example

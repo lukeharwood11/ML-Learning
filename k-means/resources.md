@@ -1,9 +1,14 @@
 # K-Means
+**Type**: Unsupervised Learning
 
+K-means clustering is one of the simplest and popular unsupervised machine learning algorithms
 ## Resources
 
 ### Follow Along
 [RealPython.com](https://realpython.com/k-means-clustering-python/)
+
+### Other
+[TowardsDataScience.com](https://towardsdatascience.com/understanding-k-means-clustering-in-machine-learning-6a6e67336aa1#:~:text=K%2Dmeans%20clustering%20is%20one,known%2C%20or%20labelled%2C%20outcomes.)
 
 ## Notes
 
